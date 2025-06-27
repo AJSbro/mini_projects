@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./soduku.css">
+    <title>Soduku</title>
+</head>
+<body>
+    
+    
+    <main>
+        <section>
+            <div class="soduku">
+                <div class="time">
+                    <p class="count_mistake">Mistakes: 0/3</p>
+                    <p class="difficulty">Easy</p>
+                    <p class="count_time">00:15:09</p>
+                </div>
+        
+                <div class="board">
+        
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="actions_buttons">
+                    <button onclick="undo()">
+                        <img width="26" height="26" src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/737373/external-arrow-arrows-jumpicon-line-jumpicon-line-ayub-irawan-48.png" alt="external-arrow-arrows-jumpicon-line-jumpicon-line-ayub-irawan-48"/>                    
+                        <p>Undo</p>
+                    </button>
+    
+                    <button onclick="redo()">
+                        <img width="26" height="26" src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/737373/external-arrow-arrows-jumpicon-line-jumpicon-line-ayub-irawan-49.png" alt="external-arrow-arrows-jumpicon-line-jumpicon-line-ayub-irawan-49"/>
+                        <p>Redo</p>
+                    </button>
+    
+                    <button onclick="erase()">
+                        <img width="26" height="26" src="https://img.icons8.com/ios-filled/50/737373/erase.png" alt="erase"/>
+                        <p>Erase</p>
+                    </button>
+    
+                    <button onclick="note()">
+                        <img width="26" height="26" src="https://img.icons8.com/forma-thin-filled/50/737373/pencil.png" alt="pencil"/>
+                        <p>Note</p>
+                    </button>
+    
+                    <button onclick="hint()">
+                        <img width="26" height="26" src="https://img.icons8.com/ios/50/737373/light-on--v1.png" alt="light-on--v1"/>
+                        <p>Hint</p>
+                    </button>
+                </div>
+
+                <div class="number_buttons">
+                    <button onclick="insertNumber('1')">1</button>
+                    <button onclick="insertNumber('2')">2</button>
+                    <button onclick="insertNumber('3')">3</button>
+                    <button onclick="insertNumber('4')">4</button>
+                    <button onclick="insertNumber('5')">5</button>
+                    <button onclick="insertNumber('6')">6</button>
+                    <button onclick="insertNumber('7')">7</button>
+                    <button onclick="insertNumber('8')">8</button>
+                    <button onclick="insertNumber('9')">9</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./soduku.js"></script>
+</body>
+</html>

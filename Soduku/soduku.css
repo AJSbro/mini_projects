@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: hsl(180, 36%, 96%); */
+    background-color: hsl(0, 0%, 5%);
+}
+* {
+    font-family: arial;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+
+
+/* board */
+.soduku {
+    width: 100%;
+    background-color: rgb(34, 139, 199);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.soduku .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(0, 0%, 80%);
+    /* padding-right: 1px; */
+    width: 100%;
+}
+.soduku .time p {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.soduku .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 2px solid black; */
+    width: 100%;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.soduku .board .square {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.soduku .board .square .cube {
+    width: 100%;
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
+    outline: none;
+    caret-color: transparent;
+    font-size: 25px;
+    text-align: center;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 25%);
+}
+.soduku .board .square .cube:focus {
+    background-color: rgb(34, 139, 199);
+}
+/* Actions */
+.actions_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions_buttons button {
+    background: none;
+    border: none;
+    color: hsl(0, 0%, 70%);
+}
+.actions_buttons button img {
+    filter: brightness(1.5);
+}
+
+.number_buttons {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    background-color: hsl(0, 0%, 10%);
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.number_buttons button {
+    flex: 1;
+    aspect-ratio: 1 / 1; /* faz largura = altura */
+    font-size: 32px;
+    font-weight: 500;
+    background: none;
+    /* background-color: hsl(0, 0%, 100%); */
+    color: rgb(34, 139, 199);
+    border: none;
+    /* box-shadow: 0 3px 3px hsl(0, 0%, 80%); */
+    /* border-radius: 5px; */
+    /* padding: 3px; */
+}
